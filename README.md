@@ -21,7 +21,20 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h2>Overview</h2>
 
+![image](https://github.com/user-attachments/assets/2b8eb2ea-0b82-40e5-a647-584ac40ac210)
+
 - Preparing Active Directory infrastructure in Microsoft Azure
+
+  - We need to create 2 virtual machines.
+
+    - A Domain Controller <b>(DC-1)</b> which acts as the server that manages all users/resources 
+
+    - A Client <b>(Client-1)</b> which simulates a user/computer that is a part of the domain
+
+  - Change Client-1's DNS IP address to the same IP address as the Domain Controller
+ 
+    - By default, Client-1's DNS IP address will connect to Azure's DNS Server. For Client-1 to find and              join DC-1's domain, we will have to change Client-1's DNS IP address to the same IP address as DC-1      
+       
 - Deploying Active Directory
 - Creating Users with Powershell
 
@@ -29,7 +42,7 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h3>1. Preparing AD infrastructure in Azure</h3>
   
-  - First, we will have to  
+  - First, we need to create 2 virtual machines (a Domain Controller and a Client)
 
 <br/>
 --------------------------------------------------------------
