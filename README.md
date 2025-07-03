@@ -42,7 +42,8 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h3>1. Preparing AD infrastructure in Azure</h3>
   
-  - First, we need to create 2 virtual machines (a Domain Controller and a Client)
+  - First, let's create the Domain Controller, DC-1
+    - Go to  
 
 <br/>
 --------------------------------------------------------------
