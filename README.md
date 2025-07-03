@@ -18,12 +18,12 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Overview</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Preparing Active Directory infrastructure in Microsoft Azure
+- Deploying Active Directory
+- Creating Users with Powershell
+- Group Policy and Managing Accounts
 
 <h2>Deployment and Configuration Steps</h2>
 
