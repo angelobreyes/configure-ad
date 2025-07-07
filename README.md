@@ -317,8 +317,36 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/7fa91ab3-d92b-4865-90bd-ac8559e43fee)
 
-
 <br />
+
+<h4>Promote server to Domain Controller</h4>
+   - Click the flag icon -> Promote this server to a domain controller
+
+![image](https://github.com/user-attachments/assets/7bdc60e3-def4-4a52-a7d1-45192345e912)
+
+![image](https://github.com/user-attachments/assets/68e2daeb-905b-4ed0-9f36-e3ce887b8042)
+
+  - Click Add a new forest -> root domain name : mydomain.com ( this is only an example, you can use anything)
+    -> click Next
+
+![image](https://github.com/user-attachments/assets/d77c2c5b-b787-4898-af1f-2b7755f81457)
+
+  - Fill password then click next -> next -> next -> next 
+
+![image](https://github.com/user-attachments/assets/35ced272-f503-4177-b3b4-08478e02d6c8)
+
+![image](https://github.com/user-attachments/assets/2a3167a4-653d-4032-973f-71139834c7ab)
+
+![image](https://github.com/user-attachments/assets/845897c2-cf25-437b-833e-92d60613dc59)
+
+![image](https://github.com/user-attachments/assets/e4586b97-1552-4910-ab84-92e8731f45ec)
+
+  - Click next -> wait for prequisites to finish then Install
+
+![image](https://github.com/user-attachments/assets/e220f32a-75bc-4684-a2ab-e1403f76f460)
+
+![image](https://github.com/user-attachments/assets/442810f1-c5e1-4773-a841-a7aecd5e6e5a)
+
 
 
 <h3>3. Creating Users with Powershell</h3>
