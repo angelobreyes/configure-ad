@@ -277,6 +277,49 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/f3e52530-c418-457b-865f-aad4129cea1e)
 
+  - Within DC-1, Server Manager should open by default if not go to search box -> type Server Manager -> click Server          Manager
+
+![image](https://github.com/user-attachments/assets/e3353376-f194-46e9-ba7c-1685b4fb76d6)
+
+  - On Server Manager, click Add roles and features
+
+![image](https://github.com/user-attachments/assets/ee0f0410-fdb2-4f4c-8bc4-d622a456d5fe)
+
+  - Click Next -> Next -> Next 
+
+![image](https://github.com/user-attachments/assets/7186d7a3-d4ed-4ad0-b977-3a34bc8cc377)
+
+![image](https://github.com/user-attachments/assets/654f0c3d-48b2-4805-8725-bf2067f24847)
+
+![image](https://github.com/user-attachments/assets/57b8e6e7-aaf6-4eb8-87fe-b774dfddb1b1)
+
+  - Click on Active Directory Domain Services -> Add Features -> Next
+
+![image](https://github.com/user-attachments/assets/255b85ee-8b8d-4106-b082-49105f3829cf)
+
+![image](https://github.com/user-attachments/assets/19c8d74d-4c62-4e03-a129-fc7f40c2fcae)
+
+![image](https://github.com/user-attachments/assets/1da7fcd7-a40a-4af9-b8c9-6db539a41ad3)
+
+  - CLick Next -> Next -> click checkbox -> click Yes -> Install
+
+![image](https://github.com/user-attachments/assets/bdffde99-6e79-444e-8b92-307d86f5dc91)
+
+![image](https://github.com/user-attachments/assets/bd035353-ac5f-4b03-9d6d-cf85b16143f9)
+
+![image](https://github.com/user-attachments/assets/470414f0-c6b3-4945-8175-206742cdefaa)
+
+![image](https://github.com/user-attachments/assets/bbccb4fd-077d-4015-8206-942c7286b1a5)
+
+  - Wait for installation to finish then close
+
+![image](https://github.com/user-attachments/assets/418f9d6a-212f-4426-b199-f6347c7f0b00)
+
+![image](https://github.com/user-attachments/assets/7fa91ab3-d92b-4865-90bd-ac8559e43fee)
+
+
+<br />
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
