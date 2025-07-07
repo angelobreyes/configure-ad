@@ -42,31 +42,267 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h3>1. Preparing AD infrastructure in Azure</h3>
   
-  - First, let's create the Domain Controller (DC-1)
-    - Go to the Azure Portal
+<h4>Setup Domain Controller in Azure (DC-1)</h4>
+
+  <h5>Create a Resouce Group</h5>
+  
+  - Go to the Azure Portal -> Click Resource Groups -> Click Create
+   
+![image](https://github.com/user-attachments/assets/a1fc8d67-da53-42a7-b83a-a3d52e64d2f1)
+
+![image](https://github.com/user-attachments/assets/89b72714-ff75-407d-b2e9-c53d2a6b7df0)
+
+  - Fill Resource Group Name (for this example, I'll use Active-Directory) -> Click Review + Create -> Click        Create
+
+![image](https://github.com/user-attachments/assets/8f0181ef-161e-437d-8feb-5ff516314528)
+
+![image](https://github.com/user-attachments/assets/eb5f5970-9fd9-4cb5-919a-065098354512)
+
+![image](https://github.com/user-attachments/assets/72b03f31-ad35-4605-a9cc-5f326a5743d1)
+
+<br />
+
+  <h5>Create a Virtual Network and Subnet</h5>
+
+  - On the search box, type virtual networks and click Virtual networks -> click Create
+
+![image](https://github.com/user-attachments/assets/a354b9b3-594e-4b28-a9cf-fc40e95e1013)
+
+![image](https://github.com/user-attachments/assets/6a6b99be-b7bf-46f6-8c21-82e17c68aa59)
+
+  - *Make sure the Resource Group is set to what we previously created and Region is the same
+  - Fill  Virtual Network Name -> Click Review + Create -> Click Create
+
+![image](https://github.com/user-attachments/assets/ea1f23cf-abb8-4d24-a145-d524d018fd7c)
+
+![image](https://github.com/user-attachments/assets/f0f65147-cf6f-49c2-9455-22b9cd592df7)
+
+  - Wait until deployment is done
+
+![image](https://github.com/user-attachments/assets/9f27f100-18dc-435d-b4a3-4d34930622f6)
+
+<br />
+  
+  <h5>Create the Domain Controller VM (Windows Server 2022) named “DC-1”</h5>
+
+  - On the search box, type Virtual Machines and click Virtual Machines
+
+![image](https://github.com/user-attachments/assets/2f3ded1a-5bbd-4dc5-889c-a7d5d346c45e)
+
+  - Click Create -> Click Virtual Machine
+
+![image](https://github.com/user-attachments/assets/72e43c49-97a5-4a77-81c4-6de45ac6d3a2)
+
+  - On Virtual Machine name, type DC-1 and make sure it is in the same Resource Group and Region we previously     created
+
+![image](https://github.com/user-attachments/assets/5907fdf0-89c2-4e7f-b836-ca3fd74f827d)
+
+  - Scroll down, on image choose Windows Server 2022
+
+![image](https://github.com/user-attachments/assets/4823d3b3-9fa4-4ee2-91cf-3330f9d62fca)
+
+  - Scroll down, on size, you can use 2 vcpus
+
+![image](https://github.com/user-attachments/assets/07df19e7-3aec-4673-b6c9-88238ec7e980)
+
+  - Scroll down, fill Username and Password
+
+![image](https://github.com/user-attachments/assets/f91d10fa-99d2-4ed6-8fdb-0d03009a3346)
+
+  - Scroll down, under Licensing, click the two checkboxes
+
+![image](https://github.com/user-attachments/assets/533b7a81-2ebb-45a1-8089-e96c4732d8e3)
+
+  - Scroll up and click Networking and make sure the Virtual Network is set to what we previously created 
+
+![image](https://github.com/user-attachments/assets/027874ba-89af-4ba7-b749-973d079254e8)
+
+![image](https://github.com/user-attachments/assets/46257d89-c829-4574-8479-cd719f7b1d9a)
+
+  -  Scroll down and click Review + Create -> click Create
+
+![image](https://github.com/user-attachments/assets/ab07c8a2-c7f5-4c54-ab51-9f238c3f1b36)
+
+![image](https://github.com/user-attachments/assets/82ed6dfd-4e1d-440d-9661-c1dd2458d8bd)
+
+  -  Wait until deployment is done 
+
+![image](https://github.com/user-attachments/assets/05fe47da-334a-4cc6-b2ef-8ebd3529c7e0)
 
 <br/>
---------------------------------------------------------------
-Setup Domain Controller in Azure
-—
-Create a Resource Group
-Create a Virtual Network and Subnet
-Create the Domain Controller VM (Windows Server 2022) named “DC-1”
-Username: labuser
-Password: Cyberlab123!
-After VM is created, set Domain Controller’s NIC Private IP address to be static
-Log into the VM and disable the Windows Firewall (for testing connectivity)
 
-Setup Client-1 in Azure
+<h4>Set DC-1's NIC Private IP address to static</h4>
+
+  - On the search box, type virtual machines and click Virtual Machines
+
+![image](https://github.com/user-attachments/assets/87b0870e-8ba2-4e42-a9c7-2a3836c9146f)
+
+  - Click DC-1 -> click Networking then Network Settings
+
+![image](https://github.com/user-attachments/assets/18054b7b-5f25-4a3c-b990-7d2bb281c64e)
+
+![image](https://github.com/user-attachments/assets/9ccf8ca4-cfe1-4a48-9382-9f1eea84fd68)
+
+  - On Network Settings, click the link under Network Interface
+
+![image](https://github.com/user-attachments/assets/ba28fdaf-bf5c-4b7a-9522-5e2df016a374)
+
+  - Click ipconfig1 -> click Static and Save 
+
+![image](https://github.com/user-attachments/assets/02f6ec62-a659-4552-9cdc-a98046368dcc)
+
+![image](https://github.com/user-attachments/assets/eb547106-12f1-42c4-91ec-31809c0eb841)
+
+<br />
+
+<h4>Setup Client-1 in Azure</h4>
+
+  - Go back to Virtual Machines and click Create
+
+![image](https://github.com/user-attachments/assets/82a547f4-4e91-491f-878f-f31244f4e4ab)
+
+![image](https://github.com/user-attachments/assets/917b634c-c1a7-447d-9944-5116420263d8)
+
+  - Make sure the Resource Group is set what we previously created -> Name : Client-1
+
+![image](https://github.com/user-attachments/assets/c7ab502a-6151-469e-bb64-41e33d88164d)
+
+  - Scroll down, on image choose Windows 10 -> on size, you can use 2 vcpus
+
+![image](https://github.com/user-attachments/assets/35b27883-0fc8-4023-a6c4-2b107572b67e)
+
+![image](https://github.com/user-attachments/assets/6d89b530-5c38-4d1d-843c-61be248a6237)
+
+  - Scroll down, fill username and password
+
+![image](https://github.com/user-attachments/assets/3aec44eb-5a92-48bd-b66b-189b6d871ff4)
+
+  - Scroll down, under Licensing, make sure the click on the checkbox
+
+![image](https://github.com/user-attachments/assets/d326aefa-d133-4c14-8345-8c58af76cd11)
+
+  - Scroll up and click Networking, make sure the network is set to what we previously created
+
+![image](https://github.com/user-attachments/assets/226b5716-2f17-4849-8bb2-0a5051028e68)
+
+![image](https://github.com/user-attachments/assets/267a775f-914e-42bb-b5c2-b0601fdd86ed)
+
+  -  Click Review + Create -> click Create
+
+![image](https://github.com/user-attachments/assets/06864142-234b-42cb-99e5-e51a6319183d)
+
+![image](https://github.com/user-attachments/assets/1a568b96-437c-435f-9366-0ada9eecd3bb)
+
+  -  Wait until deployment is done
+
+![image](https://github.com/user-attachments/assets/7fd2fc6d-7766-4004-a0c6-56503469dda0)
+
+<br />
+
+<h4>Set Client-1’s DNS settings to DC-1’s Private IP address</h4>
+
+  -  On the search box, type virtual machine and click Virtual Machines
+
+![image](https://github.com/user-attachments/assets/87b0870e-8ba2-4e42-a9c7-2a3836c9146f)
+
+  - Click DC-1 and scroll down to look for Private IP address
+  
+![image](https://github.com/user-attachments/assets/3b4b205c-6aab-42d9-8ca1-29032cf802ef)
+
+  - Double click on the Private IP address to highlight -> right click and copy
+
+![image](https://github.com/user-attachments/assets/4fed8949-c7cf-48a2-b244-535a8b6cff3f)
+
+  - Click Compute infrastracture to go back to the Virtual Machines page
+
+![image](https://github.com/user-attachments/assets/92ee9f8b-431c-40e6-be01-9fbe814c1ba3)
+
+  - Click Client-1 -> click Networking then Network Settings
+
+![image](https://github.com/user-attachments/assets/6399bb56-cb54-4978-b557-474da34551e1)
+
+![image](https://github.com/user-attachments/assets/c21769af-0213-4288-8469-2c185fe0e481)
+
+  - Under Network Interface, click the link
+
+![image](https://github.com/user-attachments/assets/67834960-21af-484d-b70d-5d69371c0766)
+
+  - Under Settings. click DNS Servers
+
+![image](https://github.com/user-attachments/assets/4496371a-7266-49e4-801e-89a7786c8529)
+
+  - Click Custom -> right click and paste -> click Save
+
+![image](https://github.com/user-attachments/assets/8f3caea6-c51f-4657-af06-b28077370299)
+
+  - Click Compute Infrastracture then click Client-1
+
+![image](https://github.com/user-attachments/assets/28724cfe-54bc-4125-80cc-aacb6760e93c)
+
+![image](https://github.com/user-attachments/assets/0de7a8d9-b200-4623-b648-ca944b14225e)
+
+  - Click Restart to make sure the changes are saved -> click Yes
+
+![image](https://github.com/user-attachments/assets/a34b7ae0-bce7-4845-a4aa-24a619a8ef37)
+
+![image](https://github.com/user-attachments/assets/ff612fdb-977e-47c2-add2-8bdd9cec05ea)
+
+<br/>
+
+<h3>2. Deploying Active Directory</h3>
+
+<h4>Install Active Directory</h4>
+  - Login to DC-1 and install Active Directory Domain Services
+
+<h3>3. Creating Users with Powershell</h3>
+--------------------------------------------------------------
+
+Part 1
+Install Active Directory
 —
-Create the Client VM (Windows 10) named “Client-1”
-Username: labuser
-Password: Cyberlab123!
-Attach it to the same region and Virtual Network as DC-1
-After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
-From the Azure Portal, restart Client-1
-Login to Client-1
-Attempt to ping DC-1’s private IP address
-Ensure the ping succeeded
-From Client-1, open PowerShell and run ipconfig /all
-The output for the DNS settings should show DC-1’s private IP Address
+
+Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+Restart and then log back into DC-1 as user: mydomain.com\labuser
+
+Create a Domain Admin user within the domain
+—
+In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+Create a new OU named “_ADMINS”
+Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
+Add jane_admin to the “Domain Admins” Security Group
+Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
+User jane_admin as your admin account from now on
+
+
+Join Client-1 to your domain (mydomain.com)
+—
+From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address (Already done)
+From the Azure Portal, restart Client-1 (Already done)
+Login to Client-1 as the original local admin (labuser) and join it to the domain (computer will restart)
+Login to the Domain Controller and verify Client-1 shows up in ADUC
+Create a new OU named “_CLIENTS” and drag Client-1 into there
+
+Finish the lab, but do not delete the VMs in Azure. We will use them for upcoming labs.
+If you are done for the day and want to save money, simply “Stop”/turn off the VMs within the Azure Portal
+
+Part 2
+
+Turn on the DC-1 and Client-1 VMs in the Azure Portal if they are off.
+Setup Remote Desktop for non-administrative users on Client-1
+—
+Log into Client-1 as mydomain.com\jane_admin
+Open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
+
+Create a bunch of additional users and attempt to log into client-1 with one of the users
+—
+Login to DC-1 as jane_admin
+Open PowerShell_ise as an administrator
+Create a new File and paste the contents of the script into it
+Run the script and observe the accounts being created
+When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
+attempt to log into Client-1 with one of the accounts (take note of the password in the script)
