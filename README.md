@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-Welcome! This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines. If you don't have a Microsoft Azure account, go check https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account for a free account with $200 credit so you can start.
+Welcome! This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines. If you don't have a Microsoft Azure account, go to <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account">Azure</a>  for a free account with $200 credit so you can start.
 
 <br />
 
@@ -42,8 +42,8 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h3>1. Preparing AD infrastructure in Azure</h3>
   
-  - First, let's create the Domain Controller, DC-1
-    - Go to  
+  - First, let's create the Domain Controller (DC-1)
+    - Go to the Azure Portal
 
 <br/>
 --------------------------------------------------------------
