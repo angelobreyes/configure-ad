@@ -16,8 +16,8 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- Windows Server 2022 (Virtual Machine)
+- Windows 10 (21H2) (Virtual Machine)
 
 <h2>Overview</h2>
 
@@ -252,14 +252,34 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 <h3>2. Deploying Active Directory</h3>
 
 <h4>Install Active Directory</h4>
-  - Login to DC-1 and install Active Directory Domain Services
+  - Login to DC-1 via Remote Desktop Connnections 
+    - Click Compute Infrastructure and look for DC-1's IP Address
+
+![image](https://github.com/user-attachments/assets/7711b730-53b4-47e3-b198-7121efeac752)
+
+  - Scroll right -> double click on IP address to highlight -> right click and copy   
+
+![image](https://github.com/user-attachments/assets/1aebb264-3b42-4ed1-bd32-558c7fa8c6ce)
+
+  - Press windows key or click Start button and type remote desktop and click Remote Desktop Connection
+
+![image](https://github.com/user-attachments/assets/d565f403-c035-4ef5-9d21-27e6c43ac495)
+
+  - Right click on text box and paste DC-1's IP Address
+
+![image](https://github.com/user-attachments/assets/d68d17f9-51ad-4192-a5d9-e099906db066)
+
+  - Fill in username and click connect
+
+![image](https://github.com/user-attachments/assets/39ffea14-bfd2-45a9-a6f1-5292caf5b9a5)
+
+  - Fill in password and click OK
+
+![image](https://github.com/user-attachments/assets/f3e52530-c418-457b-865f-aad4129cea1e)
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
-
-Part 1
-Install Active Directory
-—
 
 Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 Restart and then log back into DC-1 as user: mydomain.com\labuser
