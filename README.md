@@ -33,7 +33,8 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
   - Change Client-1's DNS IP address to the same IP address as the Domain Controller
  
-    - By default, Client-1's DNS IP address will connect to Azure's DNS Server. For Client-1 to find and              join DC-1's domain, we will have to change Client-1's DNS IP address to the same IP address as DC-1      
+    - By default, Client-1's DNS IP address will connect to Azure's DNS Server. For Client-1 to find and
+      join DC-1's domain, we will have to change Client-1's DNS IP address to the same IP address as DC-1      
        
 - Deploying Active Directory
 - Creating Users with Powershell
@@ -52,7 +53,7 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/89b72714-ff75-407d-b2e9-c53d2a6b7df0)
 
-  - Fill Resource Group Name (for this example, I'll use Active-Directory) -> Click Review + Create -> Click        Create
+  - Fill Resource Group Name (for this example, I'll use Active-Directory) -> Click Review + Create -> Click Create
 
 ![image](https://github.com/user-attachments/assets/8f0181ef-161e-437d-8feb-5ff516314528)
 
