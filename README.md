@@ -348,15 +348,20 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/442810f1-c5e1-4773-a841-a7aecd5e6e5a)
 
+  <b>- When the installation is done, it will restart the DC-1 automatically</b>
+
+<br />
+
+<h4>Create a Domain Admin user within the domain</h4>
+  - On search box, type active directory and click Active Directory Users and Computers
+
+![image](https://github.com/user-attachments/assets/a9686210-4b83-4d11-84ea-eff1a6479e17)
 
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
 
-Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
-Restart and then log back into DC-1 as user: mydomain.com\labuser
 
-Create a Domain Admin user within the domain
 —
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 Create a new OU named “_ADMINS”
