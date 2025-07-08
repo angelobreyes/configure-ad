@@ -564,15 +564,60 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h3>3. Creating Users with Powershell</h3>
 <h4>Create additional users and attempt to log into client-1 with one of the users</h4>
---------------------------------------------------------------
-<h4>Create a Domain Admin user within the domain</h4>
+<h4>*we will be running a script to create users to simulate a work setting with a lot of accounts*</h4>
+
+  - Log in to DC-1 as Jane (Admin)
+
+![image](https://github.com/user-attachments/assets/bcb95af3-bcdd-4036-9347-7038d3a419df)
+
+![image](https://github.com/user-attachments/assets/b39e459c-0d18-4445-91d6-0d9a306f87cf)
+
+![image](https://github.com/user-attachments/assets/75edcc56-d07c-4253-b188-30b667fe7fcc)
+
+![image](https://github.com/user-attachments/assets/bac5415b-03b0-409b-991d-f956ff91f83f)
+
+  - Within DC-1, type Powershell in Search box -> click PowerShell_ISE -> right click and click Run as Administrator
+
+![image](https://github.com/user-attachments/assets/2425b649-27cc-46bc-821e-dee56682eec7)
+
+  - Click New Script 
+
+![image](https://github.com/user-attachments/assets/bdb5aa15-ce75-4b0f-bdde-6123665a0d3e)
+
+  - Go to <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">Script</a>
+  - Click Copy Raw File
+
+![image](https://github.com/user-attachments/assets/be64265b-1c96-4841-9440-6b26505a88f6)
+
+  - Go back to PowerShell and right click -> click Paste
+
+![image](https://github.com/user-attachments/assets/d1165eb2-5e1c-4941-bc20-92e7dedf6e9e)
+
+  - Click Run Script -> Observe the users being created -> Click Stop (whenever you feel you have enough users)
+
+![image](https://github.com/user-attachments/assets/ff673227-bdc6-429c-8b81-ea846a334735)
+
+![image](https://github.com/user-attachments/assets/7fdadcf1-777e-4e75-920d-2446b133c33a)
+
+  - Once finished, open Active Directory Users and Computers and observe the accounts in the appropriate OU (_EMPLOYEES)
+
+![image](https://github.com/user-attachments/assets/10ef47ea-2c06-4aeb-8173-4462cedd9181)
+
+![image](https://github.com/user-attachments/assets/501451ad-9dda-4a3f-95c5-78374e470dfc)
+
+<br />
+
+<h4>Attempt to log into Client-1 with one of the accounts (take note of the password in the script)</h4>
+
+  - Go to PowerShell -> check the password and take note for log in
+
+![image](https://github.com/user-attachments/assets/94dbcab1-3d5a-4d86-8292-7c740d3a69e9)
+
+  - Go to Active Directory Users and Computers -> check a user and take note for log in (you can choose anyone)
+
+![image](https://github.com/user-attachments/assets/ed346b82-2abb-4ea5-8d27-f577288b6584)
+
+  - Log in to Client-1 with a user of your choice
 
 
-Create a bunch of additional users and attempt to log into client-1 with one of the users
-—
-Login to DC-1 as jane_admin
-Open PowerShell_ise as an administrator
-Create a new File and paste the contents of the script into it
-Run the script and observe the accounts being created
-When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
-attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+<br />
