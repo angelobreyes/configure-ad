@@ -540,6 +540,7 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/a52a1d82-6777-4af2-80f4-73fcde5d0b94)
 
+![image](https://github.com/user-attachments/assets/63534157-4311-4935-9e2e-bd5d5a23e02c)
 
 
 <h3>3. Creating Users with Powershell</h3>
