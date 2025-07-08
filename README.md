@@ -617,7 +617,14 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/ed346b82-2abb-4ea5-8d27-f577288b6584)
 
-  - Log in to Client-1 with a user of your choice
+  - Log in to Client-1 with a user of your choice (mydomain\username and Password1)
 
+![image](https://github.com/user-attachments/assets/1ae32c2c-b51e-454d-a701-2f3a7d450317)
+
+![image](https://github.com/user-attachments/assets/61c701ad-6978-44ac-89a0-e8d6d4310509)
+
+![image](https://github.com/user-attachments/assets/0e926344-487f-4e8e-a075-d4fc126561b2)
 
 <br />
+
+<h1>Well done on deploying on-premises Active Directory within Azure Virtual Machines!</h1>
