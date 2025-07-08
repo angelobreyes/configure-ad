@@ -464,6 +464,28 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/3c3a34a0-0c49-40a7-806a-68f12b27ad1d)
 
+  - Within Client-1, on the search box, type about and click About your PC
+
+![image](https://github.com/user-attachments/assets/748eb2cb-4c6f-4ea3-b6d9-f6a854c19d63)
+
+  - Within About your PC, click Rename this PC (advanced)
+
+![image](https://github.com/user-attachments/assets/aa14cd17-05ec-4f62-b439-89c5244f7a55)
+
+  - Click Change -> CLick Domain and type your domain name -> click OK
+
+![image](https://github.com/user-attachments/assets/21013440-8b79-446d-ad03-923264f916a2)
+
+![image](https://github.com/user-attachments/assets/ca73bfe3-8995-4d2a-a87e-15aa642fe458)
+
+  - Fill in Jane Doe username and password -> Click OK -> Click OK -> Click OK
+
+![image](https://github.com/user-attachments/assets/83182f70-8d0b-441b-adc0-05537598a18c)
+
+![image](https://github.com/user-attachments/assets/bb35545a-428f-4208-8e47-b40be5a0196b)
+
+![image](https://github.com/user-attachments/assets/f1c575ad-a7f0-4fbd-9243-a8d1132c2c98)
+
 
 
 <h3>3. Creating Users with Powershell</h3>
