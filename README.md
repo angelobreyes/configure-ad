@@ -626,5 +626,5 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 ![image](https://github.com/user-attachments/assets/0e926344-487f-4e8e-a075-d4fc126561b2)
 
 <br />
-
+_______________________________________________________________________________________________________________________________________________________
 <h1>Well done on deploying on-premises Active Directory within Azure Virtual Machines!</h1>
