@@ -502,22 +502,48 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/bac5415b-03b0-409b-991d-f956ff91f83f)
 
+  - Within DC-1, open Active Directory Users and Computers
+
+![image](https://github.com/user-attachments/assets/94688c80-76d1-4f59-a4f6-68cbe7c1d217)
+
+  -  Click drop down arrow besides Domain Name -> Computers -> see Client-1
+
+![image](https://github.com/user-attachments/assets/b73c0b5e-f30f-4705-bce0-63ef800c7e7d)
+
+<br />
+
+<h5>Create a new Organizational Unit named “_CLIENTS” and drag Client-1 into there</h5>
+
+  -  Right click on Domain name -> hover on New -> Click Organizational Unit
+
+![image](https://github.com/user-attachments/assets/5f51f565-ec66-4b8b-bd9d-1b6cf8452444)
+
+  - Name the new OU, _CLIENTS and click OK
+
+![image](https://github.com/user-attachments/assets/6478e593-e87d-4e0f-a971-1bdb185e4c58)
+
+  - Click Computers -> click and hold to drag Client-1 to _CLIENTS -> click Yes
+
+![image](https://github.com/user-attachments/assets/8db47349-88f8-4941-899b-d930d8d763f9)
+
+![image](https://github.com/user-attachments/assets/5b7265e2-5461-42f6-ad74-19f3057385ba)
+
+![image](https://github.com/user-attachments/assets/70823c5a-e881-47ac-88ec-fda3fb31dd78)
+
+<br />
+
+<h4>Setup Remote Desktop for non-administrative users on Client-1</h4>
+
+  - Log in to Client-1 as mydomain.com\janeadmin
+    
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
 <h4>Create a Domain Admin user within the domain</h4>
 
-
-Login to the Domain Controller and verify Client-1 shows up in ADUC
-Create a new OU named “_CLIENTS” and drag Client-1 into there
-
-Finish the lab, but do not delete the VMs in Azure. We will use them for upcoming labs.
-If you are done for the day and want to save money, simply “Stop”/turn off the VMs within the Azure Portal
-
 Part 2
 
-Turn on the DC-1 and Client-1 VMs in the Azure Portal if they are off.
-Setup Remote Desktop for non-administrative users on Client-1
+
 —
 Log into Client-1 as mydomain.com\jane_admin
 Open system properties
