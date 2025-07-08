@@ -414,9 +414,11 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 <h4>Log in as Jane (Admin)</h4>
 
   - Log out of DC-1 and log back in as "mydomain.com\janeadmin"
+  - Press Windows Key or click Start Button -> hover/click Power -> click Disconnect
 
+![image](https://github.com/user-attachments/assets/6df8ffd4-a3af-43bd-ba59-b17cc616c88d)
 
-
+![image](https://github.com/user-attachments/assets/ff4af785-c2c3-4e22-b2ea-70bf0a79b85f)
 
 
 <h3>3. Creating Users with Powershell</h3>
