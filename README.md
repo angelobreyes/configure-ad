@@ -534,8 +534,13 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h4>Setup Remote Desktop for non-administrative users on Client-1</h4>
 
-  - Log in to Client-1 as mydomain.com\janeadmin
+  - Log in to Client-1 as mydomain.com\janedoe
     
+![image](https://github.com/user-attachments/assets/a12f430c-a522-4047-9c01-2fdb36f7f3f8)
+
+![image](https://github.com/user-attachments/assets/a52a1d82-6777-4af2-80f4-73fcde5d0b94)
+
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
