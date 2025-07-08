@@ -420,6 +420,22 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/ff4af785-c2c3-4e22-b2ea-70bf0a79b85f)
 
+  - Click Start button -> type Remote Desktop -> Click Remote Desktop Connection
+
+![image](https://github.com/user-attachments/assets/5ad9f780-549b-46cf-be97-972ab7493886)
+
+  - Fill in IP Address if not already filled -> Click Show Options
+
+![image](https://github.com/user-attachments/assets/bb570347-7dbd-4c73-8773-5c34a48f6249)
+
+  - Type in mydomain.com\janeadmin and click Connect
+
+![image](https://github.com/user-attachments/assets/f3573cee-b4bd-4d18-a273-bea172e5f5ff)
+
+  - Enter Password and click OK
+
+![image](https://github.com/user-attachments/assets/2aff0cfd-3edd-4994-9bf7-10b92029baca)
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
