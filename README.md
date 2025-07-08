@@ -39,6 +39,10 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 - Deploying Active Directory
 - Creating Users with Powershell
 
+<br />
+
+<b>*(the names used here (to name VMs, folders, usernames, passwords, etc.) are only for example. You can use your own preference)*</b>
+
 <h2>Deployment and Configuration Steps</h2>
 
 <h3>1. Preparing AD infrastructure in Azure</h3>
@@ -321,14 +325,14 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 <br />
 
 <h4>Promote server to Domain Controller</h4>
-   - Click the flag icon -> Promote this server to a domain controller
+   
+  - Click the flag icon -> Promote this server to a domain controller
 
 ![image](https://github.com/user-attachments/assets/7bdc60e3-def4-4a52-a7d1-45192345e912)
 
 ![image](https://github.com/user-attachments/assets/68e2daeb-905b-4ed0-9f36-e3ce887b8042)
 
-  - Click Add a new forest -> root domain name : mydomain.com ( this is only an example, you can use anything)
-    -> click Next
+  - Click Add a new forest -> root domain name : mydomain.com -> click Next
 
 ![image](https://github.com/user-attachments/assets/d77c2c5b-b787-4898-af1f-2b7755f81457)
 
@@ -353,19 +357,68 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 <br />
 
 <h4>Create a Domain Admin user within the domain</h4>
+
+<h5>Create Organizational Unit _EMPLOYEES</h5>
+ 
   - On search box, type active directory and click Active Directory Users and Computers
 
 ![image](https://github.com/user-attachments/assets/a9686210-4b83-4d11-84ea-eff1a6479e17)
 
+  - Click on the domain we created -> right click on blank space -> hover on New -> click Organizational Unit
+
+![image](https://github.com/user-attachments/assets/942805b5-d6a8-4e4e-b765-1186170db43f)
+
+![image](https://github.com/user-attachments/assets/54f4bb07-4fe3-4a6d-9e26-d7cddf2a9760)
+
+  - Name the new Organizational Unit, _EMPLOYEES then click OK
+
+![image](https://github.com/user-attachments/assets/a84d0db3-7f47-49f8-aaa1-13102233d6a0)
+
+<h5>Create Organizational Unit _ADMINS</h5>
+
+  - Right click on the domain -> hover on New -> click Organizational Unit
+
+![image](https://github.com/user-attachments/assets/ecf8a8dc-8fef-45cb-ba5c-da25aaefae61)
+
+  - Name the new Organizational Unit, _ADMINS then click OK
+
+![image](https://github.com/user-attachments/assets/95bb0ceb-8838-4f34-831c-498242d590df)
+
+<h5>Create a User and assign to Domain Admins </h5>
+
+  - Right click on _ADMINS, hover on New and click User
+
+![image](https://github.com/user-attachments/assets/cf23eac4-85fd-4379-899a-5b629a914e05)
+
+  - Fill in all fields and click Next
+
+![image](https://github.com/user-attachments/assets/7408a804-1e60-4213-b3b8-93b7bffeae4c)
+
+  - Fill in password and uncheck the User must change password and Check Password never expires -> click Next -> Finish
+
+![image](https://github.com/user-attachments/assets/085b687e-c268-4821-94f1-54625e0d5c0f)
+
+![image](https://github.com/user-attachments/assets/96303cff-ec9a-4de4-8d96-290b06c116ab)
+
+  - Right click on Jane Doe and click Add to Group
+
+![image](https://github.com/user-attachments/assets/df63dc9e-943e-4286-9f2a-9fdac5ec13b8)
+
+  - Enter Domain Admins -> Click Check Names -> Click OK
+
+![image](https://github.com/user-attachments/assets/90f4ca64-45c2-402b-8dbc-c47d6e4b510b)
+
+
+![image](https://github.com/user-attachments/assets/6a6c854e-6cd8-4684-bb88-b507d2a66dcc)
+
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
-
+<h4>Create a Domain Admin user within the domain</h4>
 
 —
-In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-Create a new OU named “_ADMINS”
-Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
+
 Add jane_admin to the “Domain Admins” Security Group
 Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
 User jane_admin as your admin account from now on
