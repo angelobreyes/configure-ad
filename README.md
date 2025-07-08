@@ -404,12 +404,18 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/df63dc9e-943e-4286-9f2a-9fdac5ec13b8)
 
-  - Enter Domain Admins -> Click Check Names -> Click OK
+  - Enter Domain Admins -> Click Check Names -> Click OK -> Click OK
 
 ![image](https://github.com/user-attachments/assets/90f4ca64-45c2-402b-8dbc-c47d6e4b510b)
 
 
 ![image](https://github.com/user-attachments/assets/6a6c854e-6cd8-4684-bb88-b507d2a66dcc)
+
+<h4>Log in as Jane (Admin)</h4>
+
+  - Log out of DC-1 and log back in as "mydomain.com\janeadmin"
+
+
 
 
 
@@ -418,8 +424,6 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 <h4>Create a Domain Admin user within the domain</h4>
 
 —
-
-Add jane_admin to the “Domain Admins” Security Group
 Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
 User jane_admin as your admin account from now on
 
