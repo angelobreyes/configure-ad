@@ -490,12 +490,17 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/39a966eb-7646-4594-84d5-7d4aae8eb6f1)
 
+<br />
+
+<h5>Login to the Domain Controller and verify Client-1 shows up in Active Directory Users and Computers</h5>
+
+  - 
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
 <h4>Create a Domain Admin user within the domain</h4>
 
-Login to Client-1 as the original local admin (labuser) and join it to the domain (computer will restart)
+
 Login to the Domain Controller and verify Client-1 shows up in ADUC
 Create a new OU named “_CLIENTS” and drag Client-1 into there
 
