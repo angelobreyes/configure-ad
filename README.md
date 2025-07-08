@@ -494,7 +494,14 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h5>Login to the Domain Controller and verify Client-1 shows up in Active Directory Users and Computers</h5>
 
-  - 
+![image](https://github.com/user-attachments/assets/bcb95af3-bcdd-4036-9347-7038d3a419df)
+
+![image](https://github.com/user-attachments/assets/b39e459c-0d18-4445-91d6-0d9a306f87cf)
+
+![image](https://github.com/user-attachments/assets/75edcc56-d07c-4253-b188-30b667fe7fcc)
+
+![image](https://github.com/user-attachments/assets/bac5415b-03b0-409b-991d-f956ff91f83f)
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
