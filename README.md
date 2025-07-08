@@ -563,6 +563,7 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 <br />
 
 <h3>3. Creating Users with Powershell</h3>
+<h4>Create additional users and attempt to log into client-1 with one of the users</h4>
 --------------------------------------------------------------
 <h4>Create a Domain Admin user within the domain</h4>
 
