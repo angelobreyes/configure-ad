@@ -413,7 +413,7 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <h4>Log in as Jane (Admin)</h4>
 
-  - Log out of DC-1 and log back in as "mydomain.com\janeadmin"
+  - Log out of DC-1 and log back in as "mydomain.com\janedoe"
   - Press Windows Key or click Start Button -> hover/click Power -> click Disconnect
 
 ![image](https://github.com/user-attachments/assets/6df8ffd4-a3af-43bd-ba59-b17cc616c88d)
@@ -436,20 +436,40 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/2aff0cfd-3edd-4994-9bf7-10b92029baca)
 
+<br />
+
+<h4>Join Client-1 to your domain (mydomain.com)</h4>
+
+  - Go to Azure Portal -> hover on Virtual Machines and click Client-1
+
+![image](https://github.com/user-attachments/assets/8e7a4f80-c21d-4c36-b5d4-672a98061a45)
+
+  - Scroll down and under Networking, copy the IP address 
+
+![image](https://github.com/user-attachments/assets/46d030e8-79e6-4dd0-89ff-d30761363294)
+
+  - Open Remote Desktop Connections and paste the IP address -> click Show Options
+
+![image](https://github.com/user-attachments/assets/0be535ad-4fe5-4c33-ab6f-5ec3fb83d5a5)
+
+![image](https://github.com/user-attachments/assets/65f2abb9-d0be-4f8c-a2e9-a4761e07af55)
+
+  - Fill username and click Connect
+
+![image](https://github.com/user-attachments/assets/127448cd-9b3d-4c54-ac95-1db512e7f2cb)
+
+  - Fill password and click OK -> click Yes
+
+![image](https://github.com/user-attachments/assets/25841b2f-4421-4022-b3d8-ce96dfa67915)
+
+![image](https://github.com/user-attachments/assets/3c3a34a0-0c49-40a7-806a-68f12b27ad1d)
+
+
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
 <h4>Create a Domain Admin user within the domain</h4>
 
-—
-Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
-User jane_admin as your admin account from now on
-
-
-Join Client-1 to your domain (mydomain.com)
-—
-From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address (Already done)
-From the Azure Portal, restart Client-1 (Already done)
 Login to Client-1 as the original local admin (labuser) and join it to the domain (computer will restart)
 Login to the Domain Controller and verify Client-1 shows up in ADUC
 Create a new OU named “_CLIENTS” and drag Client-1 into there
