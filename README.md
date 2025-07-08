@@ -542,21 +542,29 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 ![image](https://github.com/user-attachments/assets/63534157-4311-4935-9e2e-bd5d5a23e02c)
 
+  - Go to the search box -> type about -> click About Your PC -> click Remote desktop
+
+![image](https://github.com/user-attachments/assets/546986be-9e2a-4504-8c2e-ede0aa4361f8)
+
+![image](https://github.com/user-attachments/assets/3bcc36cb-a211-4479-8486-0a1c9d2c4476)
+
+  - Click Select users that can remotely access this PC -> Click Add
+
+![image](https://github.com/user-attachments/assets/54e4bcb7-d265-45d8-96b6-3043b0f4f0c7)
+
+![image](https://github.com/user-attachments/assets/7e6ae3a3-857f-4d88-b2cb-90afa41f4223)
+
+  - Type domain users -> click Check Names -> click OK -> Click OK
+
+![image](https://github.com/user-attachments/assets/9b139c84-9bc3-424a-bf58-19135463bfad)
+
+![image](https://github.com/user-attachments/assets/3c3fb4b2-6ff6-45e4-8c95-a125f3c229bc)
+
+<br />
 
 <h3>3. Creating Users with Powershell</h3>
 --------------------------------------------------------------
 <h4>Create a Domain Admin user within the domain</h4>
-
-Part 2
-
-
-—
-Log into Client-1 as mydomain.com\jane_admin
-Open system properties
-Click “Remote Desktop”
-Allow “domain users” access to remote desktop
-You can now log into Client-1 as a normal, non-administrative user now
-Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
