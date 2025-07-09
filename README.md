@@ -504,7 +504,7 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
   - Within DC-1, open Active Directory Users and Computers
 
-![image](https://github.com/user-attachments/assets/94688c80-76d1-4f59-a4f6-68cbe7c1d217)
+![image](https://github.com/user-attachments/assets/fadff161-bdc8-4ef2-9498-a10d960b7894)
 
   -  Click drop down arrow besides Domain Name -> Computers -> see Client-1
 
