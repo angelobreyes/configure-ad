@@ -627,4 +627,4 @@ Welcome! This tutorial outlines the implementation of on-premises Active Directo
 
 <br />
 
-<h2>Hope you found this guide helpful! <a href="https://github.com/angelobreyes/ad-group-policies">Here's</a> the next part of this guide. </h2>
+<h2><a href="https://github.com/angelobreyes/ad-group-policies">Here's</a> the next part of this guide. </h2>
